@@ -21,6 +21,9 @@ html {
   --main-color: #ddd8b5;
   --huawei-color: #c7000b;
 }
+body {
+  background-color: black;
+}
 *::selection {
   background-color: var(--main-color);
   color: #fff;
