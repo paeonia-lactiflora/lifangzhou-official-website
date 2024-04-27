@@ -1,6 +1,33 @@
+.header {
+  margin-bottom: 7vh;
+  text-align: center;
+  font-size: 3.5vh;
+}
+.header span {
+  position: relative;
+  padding-bottom: 1vh;
+}
+.header span::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  content: '';
+  width: 35%;
+  height: 0.3vh;
+  background-color: var(--main-color);
+  transform: translateX(-50%);
+}
+html {
+  --main-color: #ddd8b5;
+  --huawei-color: #c7000b;
+}
+*::selection {
+  background-color: var(--main-color);
+  color: #fff;
+}
 .navbar {
   background-color: #fff !important;
-  font-size: 1.1rem;
+  font-size: 2.2vh;
 }
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
@@ -10,20 +37,27 @@
   }
 }
 .navbar .navbar-brand {
+  display: flex;
+  align-items: center;
   margin-right: 0;
-  margin-left: 2rem;
+  margin-left: 1.5vw;
   padding: 0;
 }
 .navbar .navbar-brand img {
-  height: 4rem;
+  height: 8vh;
+}
+.navbar .navbar-brand span {
+  margin-left: 1vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5vh;
+  font-weight: 500;
 }
 .navbar .navbar-nav {
-  gap: 3rem;
+  gap: 5vh;
 }
 @media (max-width: 992px) {
   .navbar .navbar-nav {
-    margin-top: 1.5rem;
-    gap: 2.5rem;
+    margin-top: 3vh;
   }
 }
 .navbar .navbar-nav .nav-item {
@@ -32,37 +66,21 @@
 .navbar .navbar-nav .nav-item:hover::after {
   position: absolute;
   left: 50%;
-  bottom: -0.3rem;
+  bottom: -1vh;
   content: '';
-  width: 30%;
-  height: 2px;
-  background-color: #ddd8b5;
+  width: 35%;
+  height: 0.3vh;
+  background-color: var(--main-color);
   transform: translateX(-50%);
 }
 .navbar .navbar-nav .nav-item .nav-link {
   padding: 0;
 }
 .carousel {
-  margin-bottom: 5rem;
+  margin-bottom: 7vh;
 }
-.recommendInfo .header {
-  margin-bottom: 5rem;
-  text-align: center;
-  font-size: 2rem;
-}
-.recommendInfo .header span {
-  position: relative;
-  padding-bottom: 0.7rem;
-}
-.recommendInfo .header span::after {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  content: '';
-  width: 30%;
-  height: 2px;
-  background-color: #ddd8b5;
-  transform: translateX(-50%);
+.recommendInfo {
+  margin-bottom: 10vh;
 }
 .recommendInfo .content .imgBox {
   position: relative;
@@ -73,7 +91,10 @@
   transition: transform 0.3s ease-in-out;
 }
 .recommendInfo .content .imgBox:hover .textBox {
-  bottom: 1.5rem;
+  bottom: 2.5vh;
+}
+.recommendInfo .content .imgBox:hover .textBox .readMore {
+  opacity: 1;
 }
 .recommendInfo .content .imgBox:hover .mask {
   opacity: 1;
@@ -95,25 +116,122 @@
 .recommendInfo .content .textBox {
   position: absolute;
   z-index: 2;
-  bottom: -1.5rem;
-  padding: 0 2rem;
+  bottom: -2vh;
+  padding: 0 3vh;
   color: #fff;
   transition: all 0.3s ease-in-out;
 }
 .recommendInfo .content .textBox .category {
-  margin-bottom: 0.3rem !important;
-  font-size: 1.1rem;
+  margin-bottom: 0.5vh !important;
+  font-size: 1.8vh;
 }
 .recommendInfo .content .textBox .name {
-  font-size: 1.5rem;
+  font-size: 2.7vh;
   font-weight: bold;
 }
 .recommendInfo .content .textBox .readMore {
-  margin-top: 1rem;
-  font-size: 1rem;
+  margin-top: 2vh;
+  font-size: 1.9vh;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 .recommendInfo .content .textBox .readMore::after {
   content: '>';
   color: red;
-  margin-left: 0.3rem;
+  margin-left: 0.5vh;
+}
+.herb-culture {
+  margin-bottom: 7vh;
+}
+.news {
+  margin-bottom: 4vh;
+  text-align: center;
+}
+.news .content .card {
+  border-radius: 0;
+  border: none;
+  background-color: #f8f8f8;
+  color: #000;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .news .content .card {
+    height: 50vh;
+  }
+}
+.news .content .card:hover {
+  background-color: #f2f2f2;
+}
+.news .content .card:hover img {
+  transform: scale(1.05);
+}
+.news .content .card img,
+.news .content .card .card-body {
+  border-radius: 0;
+}
+.news .content .card img {
+  transition: transform 0.3s ease-in-out;
+}
+.news .content .card .card-body {
+  padding: 3vh;
+}
+.news .content .card .card-body .card-title {
+  font-weight: bold;
+  font-size: 3vh;
+}
+.news .content .card .card-body .time {
+  margin-top: 1vh;
+  font-size: 1.9vh;
+}
+.news .content .card .card-body .card-text {
+  margin-top: 1.5vh;
+  font-size: 2vh;
+  color: #666;
+}
+.news .content .list-group {
+  gap: 3vh;
+  height: 50vh;
+  padding: 3vh;
+  border-radius: 0;
+  background-color: #f8f8f8;
+}
+.news .content .list-group .list-group-item {
+  padding: 0;
+  border: none;
+  background-color: inherit;
+  cursor: pointer;
+}
+.news .content .list-group .list-group-item h5 {
+  font-size: 2.5vh;
+  font-weight: bold;
+}
+.news .content .list-group .list-group-item p {
+  margin: 0;
+  font-size: 2vh;
+  color: #666;
+}
+.news .content .list-group .list-group-item:hover {
+  color: var(--huawei-color);
+}
+.news .content .list-group .list-group-item:hover p {
+  color: var(--huawei-color);
+}
+.news .btn-group {
+  gap: 5vh;
+  margin-top: 5vh;
+}
+.news .btn-group a {
+  padding: 1vh 5vh;
+  border-color: #111;
+  border-radius: 5px !important;
+  font-size: 2vh;
+  color: #111;
+}
+.news .btn-group a:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+  color: #fff;
+}
+.copyright {
+  font-size: 2vh;
 }

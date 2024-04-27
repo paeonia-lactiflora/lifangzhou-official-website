@@ -1,7 +1,48 @@
+// 通用类
+.header {
+    margin-bottom: 7vh;
+
+    text-align: center;
+    font-size: 3.5vh;
+
+    span {
+        position: relative;
+        padding-bottom: 1vh;
+
+        &::after {
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+
+            content: '';
+
+            width: 35%;
+            height: .3vh;
+            background-color: var(--main-color);
+
+            transform: translateX(-50%);
+        }
+    }
+}
+
+// -------------------------------------------
+html {
+    --main-color: #ddd8b5;
+    --huawei-color: #c7000b;
+}
+
+* {
+    &::selection {
+        background-color: var(--main-color);
+        color: #fff;
+    }
+}
+
+
 .navbar {
     background-color: #fff !important;
 
-    font-size: 1.1rem;
+    font-size: 2.2vh;
 
     .navbar-collapse {
         @media (min-width: 992px) {
@@ -12,21 +53,31 @@
     }
 
     .navbar-brand {
+        display: flex;
+        align-items: center;
+
         margin-right: 0;
-        margin-left: 2rem;
+        margin-left: 1.5vw;
         padding: 0;
 
         img {
-            height: 4rem;
+            height: 8vh;
+        }
+
+        span {
+            margin-left: 1vh;
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5vh;
+            font-weight: 500;
         }
     }
 
     .navbar-nav {
-        gap: 3rem;
+        gap: 5vh;
 
         @media (max-width: 992px) {
-            margin-top: 1.5rem;
-            gap: 2.5rem;
+            margin-top: 3vh;
         }
 
         .nav-item {
@@ -36,13 +87,13 @@
                 &::after {
                     position: absolute;
                     left: 50%;
-                    bottom: -.3rem;
+                    bottom: -1vh;
 
                     content: '';
 
-                    width: 30%;
-                    height: 2px;
-                    background-color: #ddd8b5;
+                    width: 35%;
+                    height: .3vh;
+                    background-color: var(--main-color);
 
                     transform: translateX(-50%);
                 }
@@ -56,35 +107,11 @@
 }
 
 .carousel {
-    margin-bottom: 5rem;
+    margin-bottom: 7vh;
 }
 
 .recommendInfo {
-    .header {
-        margin-bottom: 5rem;
-
-        text-align: center;
-        font-size: 2rem;
-
-        span {
-            position: relative;
-            padding-bottom: 0.7rem;
-
-            &::after {
-                position: absolute;
-                left: 50%;
-                bottom: 0;
-
-                content: '';
-
-                width: 30%;
-                height: 2px;
-                background-color: #ddd8b5;
-
-                transform: translateX(-50%);
-            }
-        }
-    }
+    margin-bottom: 10vh;
 
     .content {
         .imgBox {
@@ -98,7 +125,11 @@
 
             &:hover {
                 .textBox {
-                    bottom: 1.5rem;
+                    bottom: 2.5vh;
+
+                    .readMore {
+                        opacity: 1;
+                    }
                 }
 
                 .mask {
@@ -126,35 +157,165 @@
         .textBox {
             position: absolute;
             z-index: 2;
-            bottom: -1.5rem;
+            bottom: -2vh;
 
-            padding: 0 2rem;
+            padding: 0 3vh;
 
             color: #fff;
 
             transition: all 0.3s ease-in-out;
 
             .category {
-                margin-bottom: 0.3rem !important;
+                margin-bottom: .5vh !important;
 
-                font-size: 1.1rem;
+                font-size: 1.8vh;
             }
 
             .name {
-                font-size: 1.5rem;
+                font-size: 2.7vh;
                 font-weight: bold;
             }
 
             .readMore {
-                margin-top: 1rem;
-                font-size: 1rem;
+                margin-top: 2vh;
+                font-size: 1.9vh;
+                opacity: 0;
+                transition: opacity .3s;
 
                 &::after {
                     content: '>';
                     color: red;
-                    margin-left: .3rem;
+                    margin-left: .5vh;
                 }
             }
         }
     }
+}
+
+.herb-culture {
+    margin-bottom: 7vh;
+}
+
+.news {
+    margin-bottom: 4vh;
+    text-align: center;
+
+    .content {
+        .card {
+            border-radius: 0;
+            border: none;
+            background-color: #f8f8f8;
+
+            color: #000;
+
+            cursor: pointer;
+
+            @media (min-width: 768px) {
+                height: 50vh;
+            }
+
+
+            &:hover {
+                background-color: #f2f2f2;
+
+                img {
+                    transform: scale(1.05);
+                }
+            }
+
+            img,
+            .card-body {
+                border-radius: 0;
+            }
+
+            img {
+                transition: transform .3s ease-in-out;
+            }
+
+            .card-body {
+                padding: 3vh;
+
+                .card-title {
+                    font-weight: bold;
+                    font-size: 3vh;
+                }
+
+                .time {
+                    margin-top: 1vh;
+                    font-size: 1.9vh;
+                }
+
+                .card-text {
+                    margin-top: 1.5vh;
+                    font-size: 2vh;
+                    color: #666;
+                }
+            }
+        }
+
+        .list-group {
+            gap: 3vh;
+
+            height: 50vh;
+            padding: 3vh;
+
+            border-radius: 0;
+            background-color: #f8f8f8;
+
+            .list-group-item {
+                padding: 0;
+
+                border: none;
+                background-color: inherit;
+
+                cursor: pointer;
+
+                h5 {
+                    font-size: 2.5vh;
+                    font-weight: bold;
+                }
+
+                p {
+                    margin: 0;
+
+                    font-size: 2vh;
+                    color: #666;
+                }
+
+                &:hover {
+                    color: var(--huawei-color);
+
+                    p {
+                        color: var(--huawei-color);
+                    }
+                }
+            }
+        }
+    }
+
+    .btn-group {
+        gap: 5vh;
+
+        margin-top: 5vh;
+
+        a {
+            padding: 1vh 5vh;
+
+            border-color: #111;
+            border-radius: 5px !important;
+
+            font-size: 2vh;
+            color: #111;
+
+            &:hover {
+                background-color: var(--main-color);
+                border-color: var(--main-color);
+                color: #fff;
+            }
+        }
+    }
+}
+
+.copyright {
+    font-size: 2vh;
 }
