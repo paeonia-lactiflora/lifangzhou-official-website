@@ -26,6 +26,9 @@ html {
   background-color: var(--main-color);
   color: #fff;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .copyright {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2.2vh;

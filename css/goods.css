@@ -26,6 +26,9 @@ html {
   background-color: var(--main-color);
   color: #fff;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .copyright {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2.2vh;
@@ -37,9 +40,38 @@ body {
   padding: 3vh 1vh;
 }
 .goods-container .card {
+  position: relative;
   border: none;
   cursor: pointer;
   transition: all var(--transition-duration) ease-in-out;
+}
+.goods-container .card .iconfont {
+  position: absolute;
+  top: 2vh;
+  right: 2vh;
+  width: 5vh;
+  height: 5vh;
+  background-color: red;
+  border-radius: 50%;
+  font-size: 3vh;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  line-height: 5vh;
+  transition: all var(--transition-duration);
+}
+@media (min-width: 1200px) {
+  .goods-container .card .iconfont {
+    top: 1.5vh;
+    right: 1.5vh;
+    width: 4vh;
+    height: 4vh;
+    font-size: 2vh;
+    line-height: 4vh;
+  }
+}
+.goods-container .card .iconfont:active {
+  transform: scale(0.8);
 }
 .goods-container .card .card-body {
   padding: 3vh;
@@ -65,47 +97,88 @@ body {
   }
 }
 .goods-container .card .card-body .price {
-  margin-top: 1.5vh;
+  margin-top: 2vh;
   margin-bottom: 0;
-  font-size: 1.8vh;
+  font-size: 2vh;
   color: red;
+}
+@media (min-width: 1200px) {
+  .goods-container .card .card-body .price {
+    font-size: 1.7vh;
+  }
 }
 .goods-container .card:hover {
   transform: translateY(-0.5vh);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
   color: #000;
 }
-.car {
+.cart {
+  --original-width: 8vh;
+  --big-width: 12vh;
+  --right-show: 4vh;
+  --right-hide: -4.5vh;
   position: fixed;
-  bottom: 10vh;
-  right: 3vh;
+  bottom: var(--right-show);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 8vh;
-  height: 8vh;
+  height: var(--original-width);
   background-color: #fff;
   border: 2px solid var(--main-color);
   border-radius: 50%;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-duration);
+  animation: cartAnmShow 0.6s cubic-bezier(1, 0, 0.7, 1) forwards;
   color: var(--main-color);
 }
-.car.hide {
-  opacity: 0.5;
-  right: -4vh;
+@media (min-width: 1200px) {
+  .cart {
+    --right-show: 6vh;
+    --right-hide: -4vh;
+  }
 }
-.car:hover {
+.cart.hide {
+  animation: cartAnmHide 0.6s cubic-bezier(1, 0, 0.7, 1) forwards;
+}
+.cart:hover {
   background-color: var(--main-color);
   color: #fff;
-  box-shadow: 0 0.5rem 1rem 2px rgba(0, 0, 0, 0.15);
-  transform: translateY(-0.5vh);
-  opacity: 1;
 }
-.car:active {
-  transform: translateY(1px);
-  box-shadow: 0 0.2rem 1rem 1px rgba(0, 0, 0, 0.1);
+.cart:active {
+  transform: scale(0.9);
 }
-.car .iconfont {
+.cart .iconfont {
   font-size: 4vh;
+}
+@keyframes cartAnmHide {
+  0% {
+    right: var(--right-show);
+    width: var(--original-width);
+    box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    width: var(--big-width);
+  }
+  100% {
+    width: var(--original-width);
+    opacity: 0.5;
+    right: var(--right-hide);
+    box-shadow: none;
+  }
+}
+@keyframes cartAnmShow {
+  0% {
+    width: var(--original-width);
+    opacity: 0.5;
+    right: var(--right-hide);
+  }
+  50% {
+    width: var(--big-width);
+  }
+  100% {
+    width: var(--original-width);
+    opacity: 1;
+    right: var(--right-show);
+    box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
+  }
 }

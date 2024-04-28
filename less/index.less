@@ -71,6 +71,17 @@
             }
         }
     }
+
+    .flicker {
+        @keyframes flicker {
+            to {
+                // opacity: 0.1;
+                color: var(--main-color);
+            }
+        }
+
+        animation: flicker .2s infinite alternate;
+    }
 }
 
 .carousel {
@@ -194,6 +205,14 @@
 
 .herb-culture {
     margin-bottom: 7vh;
+
+    @media (max-width: 768px) {
+        .imgBox img {
+            width: 100%;
+            height: 35vh;
+            object-fit: cover;
+        }
+    }
 }
 
 .news {
@@ -238,7 +257,7 @@
                 .card-title {
                     font-weight: bold;
                     font-size: 3vh;
-                    
+
                     @media (min-width: 1200px) {
                         font-size: 2.5vh;
                     }
@@ -253,7 +272,7 @@
                     margin-top: 1.5vh;
                     font-size: 2vh;
                     color: #666;
-                    
+
                     @media (min-width: 1200px) {
                         font-size: 1.8vh;
                     }
@@ -292,7 +311,7 @@
 
                     font-size: 2vh;
                     color: #666;
-                    
+
                     @media (min-width: 1200px) {
                         font-size: 1.8vh;
                     }

@@ -1,8 +1,9 @@
 const goods_container = document.querySelector('.goods-container')
 
-for (let i = 0; i < 20; i++) {
+for (let i = 0; i < 15; i++) {
 	const s = `<div class="col">
 	<div class="card">
+	  <i class="iconfont icon-add"></i>
 	  <img
 		src="https://assets-global.website-files.com/5f0e5890acb33b3dec2342e8/626604b4b7815e82d92e12cd_Yellow-Clay-Isometric-Apple-Devices%20ts.jpg"
 		class="card-img-top" alt="...">
@@ -16,3 +17,16 @@ for (let i = 0; i < 20; i++) {
 
 	goods_container.innerHTML += s
 }
+
+
+const cart = document.querySelector('.cart')
+
+document.addEventListener('wheel', () => {
+	if (cart.classList.contains('hide')) return
+
+	cart.classList.add('hide')
+})
+
+cart.addEventListener('click', () => {
+	cart.classList.remove('hide')
+})

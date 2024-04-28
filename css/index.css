@@ -26,6 +26,9 @@ html {
   background-color: var(--main-color);
   color: #fff;
 }
+::-webkit-scrollbar {
+  width: 0;
+}
 .copyright {
   font-family: 'Times New Roman', Times, serif;
   font-size: 2.2vh;
@@ -84,6 +87,14 @@ html {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   padding: 0;
+}
+.navbar .flicker {
+  animation: flicker 0.2s infinite alternate;
+}
+@keyframes flicker {
+  to {
+    color: var(--main-color);
+  }
 }
 .carousel {
   margin-bottom: 7vh;
@@ -176,6 +187,13 @@ html {
 }
 .herb-culture {
   margin-bottom: 7vh;
+}
+@media (max-width: 768px) {
+  .herb-culture .imgBox img {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+  }
 }
 .news {
   margin-bottom: 5vh;

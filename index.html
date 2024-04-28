@@ -22,6 +22,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
 
+  <link rel="stylesheet" href="../css/removeScrollbar.css">
+
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
@@ -33,14 +35,19 @@
         <img src="img/logo.png" alt="">
         <span>LIFANGZHOU</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler position-relative" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
+        <!-- 小红点 -->
+        <span class="position-absolute start-0 top-0 translate-middle badge rounded-pill bg-danger" style="font-size: 1.5vh;">
+          99+
+        </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="html/goods.html" role="button" target="_blank">
+            <a class="flicker nav-link" href="html/goods.html" role="button" target="_blank">
               个人及家庭产品
             </a>
           </li>
@@ -160,7 +167,10 @@
 
   <!-- 了解中医药文化 -->
   <div class="herb-culture">
-    <img class="img-fluid" src="https://www-file.huawei.com/-/media/corp2020/home/sbanner/3/green2030-pc-cn.jpg" alt="">
+    <div class="imgBox">
+      <img class="img-fluid" src="https://www-file.huawei.com/-/media/corp2020/home/sbanner/3/green2030-pc-cn.jpg"
+        alt="">
+    </div>
   </div>
 
   <!-- 新闻 -->
