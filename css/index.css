@@ -20,14 +20,23 @@
 html {
   --main-color: #ddd8b5;
   --huawei-color: #c7000b;
+  --transition-duration: 0.3s;
 }
-*::selection {
+* ::selection {
   background-color: var(--main-color);
   color: #fff;
+}
+.copyright {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2.2vh;
 }
 .navbar {
   background-color: #fff !important;
   font-size: 2.2vh;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+.navbar.hide {
+  transform: translateY(-100%);
 }
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
@@ -113,7 +122,7 @@ html {
   cursor: pointer;
 }
 .recommendInfo .content .imgBox img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--transition-duration) ease-in-out;
 }
 .recommendInfo .content .imgBox:hover .textBox {
   bottom: 2.5vh;
@@ -136,7 +145,7 @@ html {
   height: 100%;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-duration) ease-in-out;
 }
 .recommendInfo .content .textBox {
   position: absolute;
@@ -144,7 +153,7 @@ html {
   bottom: -2vh;
   padding: 0 3vh;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-duration) ease-in-out;
 }
 .recommendInfo .content .textBox .category {
   margin-bottom: 0.5vh !important;
@@ -158,7 +167,7 @@ html {
   margin-top: 2vh;
   font-size: 1.9vh;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity var(--transition-duration);
 }
 .recommendInfo .content .textBox .readMore::after {
   content: '>';
@@ -195,7 +204,7 @@ html {
   border-radius: 0;
 }
 .news .content .card img {
-  transition: transform 0.3s ease-in-out;
+  transition: transform var(--transition-duration) ease-in-out;
 }
 .news .content .card .card-body {
   padding: 3vh;
@@ -203,6 +212,11 @@ html {
 .news .content .card .card-body .card-title {
   font-weight: bold;
   font-size: 3vh;
+}
+@media (min-width: 1200px) {
+  .news .content .card .card-body .card-title {
+    font-size: 2.5vh;
+  }
 }
 .news .content .card .card-body .time {
   margin-top: 1vh;
@@ -213,10 +227,15 @@ html {
   font-size: 2vh;
   color: #666;
 }
+@media (min-width: 1200px) {
+  .news .content .card .card-body .card-text {
+    font-size: 1.8vh;
+  }
+}
 .news .content .list-group {
   gap: 3vh;
   height: 50vh;
-  padding: 3vh;
+  padding: 4vh;
   border-radius: 0;
   background-color: #f8f8f8;
 }
@@ -230,10 +249,20 @@ html {
   font-size: 2.5vh;
   font-weight: bold;
 }
+@media (min-width: 1200px) {
+  .news .content .list-group .list-group-item h5 {
+    font-size: 2vh;
+  }
+}
 .news .content .list-group .list-group-item p {
   margin: 0;
   font-size: 2vh;
   color: #666;
+}
+@media (min-width: 1200px) {
+  .news .content .list-group .list-group-item p {
+    font-size: 1.8vh;
+  }
 }
 .news .content .list-group .list-group-item:hover {
   color: var(--huawei-color);
@@ -256,8 +285,4 @@ html {
   background-color: var(--main-color);
   border-color: var(--main-color);
   color: #fff;
-}
-.copyright {
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 2.2vh;
 }

@@ -1,47 +1,15 @@
-// 通用类
-.header {
-    margin-bottom: 7vh;
-
-    text-align: center;
-    font-size: 3.5vh;
-
-    span {
-        position: relative;
-        padding-bottom: 1vh;
-
-        &::after {
-            position: absolute;
-            left: 50%;
-            bottom: 0;
-
-            content: '';
-
-            width: 35%;
-            height: .3vh;
-            background-color: var(--main-color);
-
-            transform: translateX(-50%);
-        }
-    }
-}
-
-// -------------------------------------------
-html {
-    --main-color: #ddd8b5;
-    --huawei-color: #c7000b;
-}
-
-* {
-    &::selection {
-        background-color: var(--main-color);
-        color: #fff;
-    }
-}
+@import "common.less";
 
 .navbar {
     background-color: #fff !important;
 
     font-size: 2.2vh;
+
+    transition: transform var(--transition-duration) ease-in-out;
+
+    &.hide {
+        transform: translateY(-100%);
+    }
 
     .navbar-collapse {
         @media (min-width: 992px) {
@@ -152,7 +120,7 @@ html {
             cursor: pointer;
 
             img {
-                transition: transform 0.3s ease-in-out;
+                transition: transform var(--transition-duration) ease-in-out;
             }
 
             &:hover {
@@ -182,7 +150,7 @@ html {
                 height: 100%;
                 background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
                 opacity: 0;
-                transition: opacity 0.3s ease-in-out;
+                transition: opacity var(--transition-duration) ease-in-out;
             }
         }
 
@@ -195,7 +163,7 @@ html {
 
             color: #fff;
 
-            transition: all 0.3s ease-in-out;
+            transition: all var(--transition-duration) ease-in-out;
 
             .category {
                 margin-bottom: .5vh !important;
@@ -212,7 +180,7 @@ html {
                 margin-top: 2vh;
                 font-size: 1.9vh;
                 opacity: 0;
-                transition: opacity .3s;
+                transition: opacity var(--transition-duration);
 
                 &::after {
                     content: '>';
@@ -261,7 +229,7 @@ html {
             }
 
             img {
-                transition: transform .3s ease-in-out;
+                transition: transform var(--transition-duration) ease-in-out;
             }
 
             .card-body {
@@ -270,6 +238,10 @@ html {
                 .card-title {
                     font-weight: bold;
                     font-size: 3vh;
+                    
+                    @media (min-width: 1200px) {
+                        font-size: 2.5vh;
+                    }
                 }
 
                 .time {
@@ -281,6 +253,10 @@ html {
                     margin-top: 1.5vh;
                     font-size: 2vh;
                     color: #666;
+                    
+                    @media (min-width: 1200px) {
+                        font-size: 1.8vh;
+                    }
                 }
             }
         }
@@ -289,7 +265,7 @@ html {
             gap: 3vh;
 
             height: 50vh;
-            padding: 3vh;
+            padding: 4vh;
 
             border-radius: 0;
             background-color: #f8f8f8;
@@ -305,6 +281,10 @@ html {
                 h5 {
                     font-size: 2.5vh;
                     font-weight: bold;
+
+                    @media (min-width: 1200px) {
+                        font-size: 2vh;
+                    }
                 }
 
                 p {
@@ -312,6 +292,10 @@ html {
 
                     font-size: 2vh;
                     color: #666;
+                    
+                    @media (min-width: 1200px) {
+                        font-size: 1.8vh;
+                    }
                 }
 
                 &:hover {
@@ -346,9 +330,4 @@ html {
             }
         }
     }
-}
-
-.copyright {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2vh;
 }
