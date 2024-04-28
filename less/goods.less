@@ -37,13 +37,13 @@ body {
                 }
             }
 
-			.price {
-				margin-top: 1.5vh;
-				margin-bottom: 0;
-				
-				font-size: 1.8vh;
-				color: red;
-			}
+            .price {
+                margin-top: 1.5vh;
+                margin-bottom: 0;
+
+                font-size: 1.8vh;
+                color: red;
+            }
         }
 
         &:hover {
@@ -51,5 +51,49 @@ body {
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
             color: #000;
         }
+    }
+}
+
+.car {
+    position: fixed;
+    bottom: 10vh;
+    right: 3vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 8vh;
+    height: 8vh;
+
+    background-color: #fff;
+	border: 2px solid var(--main-color);
+    border-radius: 50%;
+
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+
+    color: var(--main-color);
+
+	&.hide {
+		opacity: .5;
+		right: -4vh;
+	}
+
+    &:hover {
+        background-color: var(--main-color);
+        color: #fff;
+        box-shadow: 0 0.5rem 1rem 2px rgba(0, 0, 0, 0.15);
+
+		transform: translateY(-.5vh);
+    }
+
+	&:active {
+		transform: translateY(1px);
+        box-shadow: 0 0.2rem 1rem 1px rgba(0, 0, 0, 0.1);
+	}
+
+    .iconfont {
+        font-size: 4vh;
     }
 }
