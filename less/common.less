@@ -30,6 +30,8 @@ html {
     --main-color: #ddd8b5;
     --huawei-color: #c7000b;
     --transition-duration: .3s;
+
+    caret-color: var(--main-color) !important;
 }
 
 * {
@@ -40,7 +42,103 @@ html {
 }
 
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
+}
+
+.navbar {
+    background-color: #fff !important;
+
+    font-size: 2.3vh;
+
+    transition: transform var(--transition-duration) ease-in-out;
+
+    &.hide {
+        transform: translateY(-100%);
+    }
+
+    // .navbar-toggler {
+    //     border-color: var(--main-color);
+
+    //     &:focus {
+    //         box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, .25);
+    //     }
+    // }
+
+    .navbar-collapse {
+        @media (min-width: 992px) {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+
+        margin-right: 0;
+        margin-left: 1.5vh;
+        padding: 0;
+
+        @media (min-width: 768px) {
+            margin-left: 6vh;
+        }
+
+        img {
+            height: 8vh;
+        }
+
+        span {
+            margin-left: .6vh;
+
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3.5vh;
+            font-weight: 500;
+        }
+    }
+
+    .navbar-nav {
+        gap: 5vh;
+
+        @media (max-width: 992px) {
+            margin: 3vh 0;
+        }
+
+        .nav-item {
+            position: relative;
+
+            &:hover {
+                &::after {
+                    position: absolute;
+                    left: 50%;
+                    bottom: -1vh;
+
+                    content: '';
+
+                    width: 35%;
+                    height: .3vh;
+                    background-color: var(--main-color);
+
+                    transform: translateX(-50%);
+                }
+            }
+
+            .nav-link {
+                padding: 0;
+            }
+        }
+    }
+
+    .flicker {
+        @keyframes flicker {
+            to {
+                // opacity: 0.1;
+                color: var(--main-color);
+            }
+        }
+
+        animation: flicker .2s infinite alternate;
+    }
 }
 
 .copyright {

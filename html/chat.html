@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>药膳商品</title>
+  <title>一对一诊疗</title>
 
   <!-- bootstrap.css -->
   <link rel="stylesheet" href="/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/normalize.css">
   <link rel="stylesheet" href="/css/common.css">
-  <link rel="stylesheet" href="/css/goods.css">
+  <link rel="stylesheet" href="/css/chat.css">
 
   <link rel="stylesheet" href="/css/removeScrollbar.css">
 
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/html/chat.html" role="button">
+            <a class="nav-link" href="#" role="button">
               一对一诊疗
             </a>
           </li>
@@ -71,54 +71,11 @@
     </div>
   </nav>
 
-  <!-- 商品区域 -->
-  <div class="container-fluid">
-    <div
-      class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4 goods-container">
-    </div>
-  </div>
-
-  <!-- 购物车 -->
-  <div type="button" class="cart" data-bs-toggle="modal" data-bs-target="#cartModal">
-    <span class="position-absolute top-0 start-0 translate-middle badge bg-danger" id="cartCount">0</span>
-    <i class="iconfont icon-cart"></i>
-  </div>
-
-  <!-- 购物车 Modal -->
-  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="cartModalLabel">购物车</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <div class="input-group justify-content-evenly">
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-              <label class="form-check-label" for="inlineRadio1">到店自取</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-              <label class="form-check-label" for="inlineRadio2">外卖配送</label>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button id="modal-closeBtn" type="button" class="btn btn-primary" data-bs-dismiss="modal"
-            aria-label="Close">立即下单</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
   <!-- 版权 -->
   <div class="copyright container-fluid text-center">
     COPYRIGHT © 立方舟
   </div>
-
-
-  <script src="../js/goods.js"></script>
 </body>
 
 </html>

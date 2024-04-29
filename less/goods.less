@@ -1,4 +1,4 @@
-@import "common.less";
+// @import "common.less";
 
 body {
     background-color: #f5f5f5;
@@ -13,7 +13,7 @@ body {
         border: none;
         cursor: pointer;
 
-        transition: all var(--transition-duration) ease-in-out;
+        transition: all var(--transition-duration);
 
         .iconfont {
             position: absolute;
@@ -92,17 +92,21 @@ body {
             box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
             color: #000;
         }
+
+        &:active {
+            transform: translateY(0vh);
+        }
     }
 }
 
 .cart {
     --original-width: 8vh;
-    --big-width: 12vh;
+    --big-width: 11vh;
     --right-show: 4vh;
     --right-hide: -4.5vh;
 
     @media (min-width: 1200px) {
-        --right-show: 6vh;
+        --right-show: 7vh;
         --right-hide: -4vh;
     }
 
@@ -140,6 +144,13 @@ body {
     &:active {
         transform: scale(.9);
         // box-shadow: 0 0.2rem 1rem 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .badge {
+        display: none;
+        top: 1vh !important;
+        border-radius: 50% !important;
+        font-size: 1.5vh;
     }
 
     .iconfont {
@@ -181,6 +192,52 @@ body {
             opacity: 1;
             right: var(--right-show);
             box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
+        }
+    }
+}
+
+#cartModal {
+    .modal-header {
+        .btn-close:focus {
+            box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, .25);
+        }
+    }
+
+    .modal-body {
+        font-size: 2.4vh;
+
+        @media (min-width: 1200px) {
+            font-size: 1.8vh;
+        }
+
+        .form-check {
+            .form-check-input:checked {
+                background-color: var(--main-color) !important;
+                border-color: var(--main-color) !important;
+                box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, .25);
+            }
+
+            label,
+            input {
+                cursor: pointer;
+            }
+        }
+    }
+
+    .modal-footer {
+        button {
+            transition: transform var(--transition-duration);
+            background-color: var(--main-color) !important;
+            border-color: var(--main-color) !important;
+
+            &:active,
+            &:focus {
+                box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, .25);
+            }
+
+            &:active {
+                transform: scale(.95);
+            }
         }
     }
 }

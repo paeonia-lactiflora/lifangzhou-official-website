@@ -21,6 +21,7 @@ html {
   --main-color: #ddd8b5;
   --huawei-color: #c7000b;
   --transition-duration: 0.3s;
+  caret-color: var(--main-color) !important;
 }
 * ::selection {
   background-color: var(--main-color);
@@ -28,6 +29,74 @@ html {
 }
 ::-webkit-scrollbar {
   width: 0;
+}
+.navbar {
+  background-color: #fff !important;
+  font-size: 2.3vh;
+  transition: transform var(--transition-duration) ease-in-out;
+}
+.navbar.hide {
+  transform: translateY(-100%);
+}
+@media (min-width: 992px) {
+  .navbar .navbar-collapse {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-left: 1.5vh;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-brand {
+    margin-left: 6vh;
+  }
+}
+.navbar .navbar-brand img {
+  height: 8vh;
+}
+.navbar .navbar-brand span {
+  margin-left: 0.6vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 3.5vh;
+  font-weight: 500;
+}
+.navbar .navbar-nav {
+  gap: 5vh;
+}
+@media (max-width: 992px) {
+  .navbar .navbar-nav {
+    margin: 3vh 0;
+  }
+}
+.navbar .navbar-nav .nav-item {
+  position: relative;
+}
+.navbar .navbar-nav .nav-item:hover::after {
+  position: absolute;
+  left: 50%;
+  bottom: -1vh;
+  content: '';
+  width: 35%;
+  height: 0.3vh;
+  background-color: var(--main-color);
+  transform: translateX(-50%);
+}
+.navbar .navbar-nav .nav-item .nav-link {
+  padding: 0;
+}
+.navbar .flicker {
+  animation: flicker 0.2s infinite alternate;
+}
+@keyframes flicker {
+  to {
+    color: var(--main-color);
+  }
 }
 .copyright {
   font-family: 'Times New Roman', Times, serif;
