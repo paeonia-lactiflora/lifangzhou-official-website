@@ -21,7 +21,7 @@ for (let i = 0; i < 15; i++) {
 
 const cart = document.querySelector('.cart')
 
-document.addEventListener('wheel', () => {
+window.addEventListener('scroll', () => {
 	if (cart.classList.contains('hide')) return
 
 	cart.classList.add('hide')
