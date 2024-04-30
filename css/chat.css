@@ -218,7 +218,7 @@ nav {
 .badge {
   color: #fff !important;
 }
-
+/* 
 .chat-bubble {
   padding: 1.3vh 2.3vh;
 }
@@ -229,10 +229,6 @@ nav {
 
 .message {
   font-size: 2.5vh !important;
-
-  @media (min-width: 1200px) {
-    /* font-size: 2vh !important; */
-  }
 }
 
 .message-detail {
@@ -247,11 +243,6 @@ nav {
   height: 4vh !important;
   font-size: 2.5vh !important;
   padding: 1.2vh 1vh !important;
-  /* padding: 1vh 2vh !important;
-  border-radius: 1vh !important;
-  background-color: #ddd !important; */
-
-  /* transform: translateY(2px); */
 }
 
 .footer-btn-wrap {
@@ -259,7 +250,6 @@ nav {
 }
 
 .footer-btn {
-  /* font-size: 3vh !important; */
   top: 0 !important;
   padding: 0 1vh !important;
-}
+} */
