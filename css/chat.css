@@ -1,5 +1,5 @@
 body {
-  cursor: url('https://ionicframework.com/img/finger.png'), auto;
+  /* cursor: url('https://ionicframework.com/img/finger.png'), auto; */
 }
 
 /* allows the bar-footer to be elastic /*
@@ -12,7 +12,7 @@ body {
 
 .bar-footer textarea {
   resize: none;
-  height: 25px;
+  /* height: 5vh; */
 }
 
 /* fixes an ios bug bear */
@@ -23,14 +23,14 @@ button.ion-android-send {
 /* add this to keep your footer buttons down 
 at the bottom as the textarea resizes */
 .footer-btn-wrap {
-  position: relative; 
-  height: 100%; 
-  width: 50px; 
+  position: relative;
+  height: 100%;
+  width: 50px;
   top: 7px;
 }
 
 .footer-btn {
-  position: absolute !important; 
+  position: absolute !important;
   bottom: 0;
 }
 
@@ -141,7 +141,10 @@ img.profile-pic.right {
   top: -3px;
 }
 
-input, textarea, .item-input, .item-input-wrapper {
+input,
+textarea,
+.item-input,
+.item-input-wrapper {
   background-color: #f4f4f4 !important;
 }
 
@@ -193,4 +196,70 @@ a.autolinker {
 
 .loader .ion-loading-c {
   font-size: 64px;
+}
+
+.title.title-center.header-item,
+ion-header-bar {
+  display: none !important;
+}
+
+/* 页面上边距 */
+ion-content {
+  top: 10vh !important;
+  bottom: 9vh !important;
+}
+
+nav {
+  display: block !important;
+  opacity: 1 !important;
+  z-index: 999;
+}
+
+.badge {
+  color: #fff !important;
+}
+
+.chat-bubble {
+  padding: 1.3vh 2.3vh;
+}
+
+.chat-bubble .ng-binding {
+  margin-bottom: .7vh;
+}
+
+.message {
+  font-size: 2.5vh !important;
+
+  @media (min-width: 1200px) {
+    /* font-size: 2vh !important; */
+  }
+}
+
+.message-detail {
+  font-size: 2vh !important;
+}
+
+.bar-footer {
+  height: 8vh !important;
+}
+
+.bar-footer textarea {
+  height: 4vh !important;
+  font-size: 2.5vh !important;
+  padding: 1.2vh 1vh !important;
+  /* padding: 1vh 2vh !important;
+  border-radius: 1vh !important;
+  background-color: #ddd !important; */
+
+  /* transform: translateY(2px); */
+}
+
+.footer-btn-wrap {
+  top: 0 !important;
+}
+
+.footer-btn {
+  /* font-size: 3vh !important; */
+  top: 0 !important;
+  padding: 0 1vh !important;
 }
