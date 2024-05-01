@@ -218,38 +218,7 @@ nav {
 .badge {
   color: #fff !important;
 }
-/* 
-.chat-bubble {
-  padding: 1.3vh 2.3vh;
-}
 
-.chat-bubble .ng-binding {
-  margin-bottom: .7vh;
+.sideBar {
+  height: 100%;
 }
-
-.message {
-  font-size: 2.5vh !important;
-}
-
-.message-detail {
-  font-size: 2vh !important;
-}
-
-.bar-footer {
-  height: 8vh !important;
-}
-
-.bar-footer textarea {
-  height: 4vh !important;
-  font-size: 2.5vh !important;
-  padding: 1.2vh 1vh !important;
-}
-
-.footer-btn-wrap {
-  top: 0 !important;
-}
-
-.footer-btn {
-  top: 0 !important;
-  padding: 0 1vh !important;
-} */

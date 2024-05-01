@@ -143,5 +143,17 @@ html {
 
 .copyright {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2vh;
+    font-size: 2.0vh;
+
+    a {
+        transition: all var(--transition-duration);
+        &:hover {
+            color: #000;
+            text-decoration: underline;
+
+            i {
+                color: #c71d23;
+            }
+        }
+    }
 }

@@ -100,5 +100,15 @@ html {
 }
 .copyright {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2.2vh;
+  font-size: 2vh;
+}
+.copyright a {
+  transition: all var(--transition-duration);
+}
+.copyright a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.copyright a:hover i {
+  color: #c71d23;
 }
