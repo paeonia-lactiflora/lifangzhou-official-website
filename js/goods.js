@@ -68,11 +68,6 @@ const herb_info = [
 		{ name: '石斛麦冬汤', description: '64位四核处理器', price: '1199元' },
 	],
 	[
-		{ name: '龙眼肉', description: '64位四核处理器', price: '1199元' },
-		{ name: '阿胶', description: '64位四核处理器', price: '1199元' },
-		{ name: '枸杞', description: '64位四核处理器', price: '1199元' },
-	],
-	[
 		{ name: '茯苓', description: '64位四核处理器', price: '1199元' },
 		{ name: '薏苡仁', description: '64位四核处理器', price: '1199元' },
 		{ name: '丝瓜', description: '64位四核处理器', price: '1199元' },
@@ -106,6 +101,11 @@ const herb_info = [
 		{ name: '防风', description: '64位四核处理器', price: '1199元' },
 		{ name: '荆芥', description: '64位四核处理器', price: '1199元' },
 		{ name: '红花', description: '64位四核处理器', price: '1199元' },
+	],
+	[
+		{ name: '龙眼肉', description: '64位四核处理器', price: '1199元' },
+		{ name: '阿胶', description: '64位四核处理器', price: '1199元' },
+		{ name: '枸杞', description: '64位四核处理器', price: '1199元' },
 	]
 ]
 

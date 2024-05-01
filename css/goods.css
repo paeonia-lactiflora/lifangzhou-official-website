@@ -3,10 +3,10 @@ body {
 }
 .sideBar {
   position: fixed;
-  left: 0.7vw;
+  left: 1.1vw;
   top: 50%;
   transform: translateY(-50%);
-  width: 11vw;
+  width: 15vw;
 }
 @media (min-width: 768px) {
   .sideBar {
@@ -36,11 +36,12 @@ body {
   color: #fff;
 }
 .content {
-  width: 90vw;
+  width: 85vw;
   margin-right: 0;
 }
 @media (min-width: 768px) {
   .content {
+    width: 90vw;
     margin-right: 0.3vw;
   }
 }
@@ -63,8 +64,8 @@ body {
 }
 .content .goods-container .card .iconfont {
   position: absolute;
-  top: 1vh;
-  right: 1vh;
+  top: 0.8vh;
+  right: 0.8vh;
   width: 3vh;
   height: 3vh;
   background-color: red;
@@ -93,7 +94,7 @@ body {
   }
 }
 .content .goods-container .card .card-body .name {
-  font-size: 2.5vh;
+  font-size: 2.2vh;
 }
 @media (min-width: 768px) {
   .content .goods-container .card .card-body .name {
@@ -101,7 +102,7 @@ body {
   }
 }
 .content .goods-container .card .card-body .description {
-  font-size: 2vh;
+  font-size: 1.8vh;
 }
 @media (min-width: 768px) {
   .content .goods-container .card .card-body .description {
