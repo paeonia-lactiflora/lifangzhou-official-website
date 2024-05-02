@@ -337,7 +337,7 @@ function update_herb_info(herb_idx) {
 			<div class="card">
 			<i class="iconfont icon-add addBtn"></i>
 			<div class="imgBox">
-				<img src=${herb.imgUrl} class="card-img-top" alt="...">
+				<img src=${herb.imgUrl} class="card-img-top" alt="网络不好...">
 			</div>
 			<div class="card-body">
 				<h5 class="card-title name text-center">${herb.name}</h5>
