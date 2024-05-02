@@ -45,17 +45,28 @@ const sidebar = document.querySelector('.sideBar .list-group')
 
 const herb_info = [
 	[
-		{ name: '黄芪炖鸡', description: '64位四核处理器', price: '1199元' },
-		{ name: '参枣汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '参杞羊肉汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '鳝鱼补气汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '西洋参养生汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '茯苓', description: '64位四核处理器', price: '1199元' },
+		{ name: '薏苡仁', description: '64位四核处理器', price: '1199元' },
+		{ name: '丝瓜', description: '64位四核处理器', price: '1199元' },
+		{ name: '冬瓜皮', description: '64位四核处理器', price: '1199元' },
+		{ name: '五指毛桃', description: '64位四核处理器', price: '1199元' },
+		{ name: '陈皮', description: '64位四核处理器', price: '1199元' },
+		{ name: '山药冬瓜汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '赤豆鲤鱼汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '五指毛桃土茯苓煲龙骨', description: '64位四核处理器', price: '1199元' },
+		{ name: '薏米冬瓜骨头汤', description: '64位四核处理器', price: '1199元' },
 	],
 	[
-		{ name: '当归生姜羊肉汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '核桃人参汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '虫草炖鸡', description: '64位四核处理器', price: '1199元' },
-		{ name: '苁蓉羊肾汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '黄芪', description: '64位四核处理器', price: '1199元' },
+		{ name: '当归', description: '64位四核处理器', price: '1199元' },
+		{ name: '防风', description: '64位四核处理器', price: '1199元' },
+		{ name: '荆芥', description: '64位四核处理器', price: '1199元' },
+		{ name: '红花', description: '64位四核处理器', price: '1199元' },
+	],
+	[
+		{ name: '龙眼肉', description: '64位四核处理器', price: '1199元' },
+		{ name: '阿胶', description: '64位四核处理器', price: '1199元' },
+		{ name: '枸杞', description: '64位四核处理器', price: '1199元' },
 	],
 	[
 		{ name: '黄精炖肉', description: '64位四核处理器', price: '1199元' },
@@ -68,16 +79,11 @@ const herb_info = [
 		{ name: '石斛麦冬汤', description: '64位四核处理器', price: '1199元' },
 	],
 	[
-		{ name: '茯苓', description: '64位四核处理器', price: '1199元' },
-		{ name: '薏苡仁', description: '64位四核处理器', price: '1199元' },
-		{ name: '丝瓜', description: '64位四核处理器', price: '1199元' },
-		{ name: '冬瓜皮', description: '64位四核处理器', price: '1199元' },
-		{ name: '五指毛桃', description: '64位四核处理器', price: '1199元' },
-		{ name: '陈皮', description: '64位四核处理器', price: '1199元' },
-		{ name: '山药冬瓜汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '赤豆鲤鱼汤', description: '64位四核处理器', price: '1199元' },
-		{ name: '五指毛桃土茯苓煲龙骨', description: '64位四核处理器', price: '1199元' },
-		{ name: '薏米冬瓜骨头汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '黄芪炖鸡', description: '64位四核处理器', price: '1199元' },
+		{ name: '参枣汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '参杞羊肉汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '鳝鱼补气汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '西洋参养生汤', description: '64位四核处理器', price: '1199元' },
 	],
 	[
 		{ name: '赤小豆薏苡仁', description: '64位四核处理器', price: '1199元' },
@@ -96,16 +102,10 @@ const herb_info = [
 		{ name: '玫瑰解郁汤', description: '64位四核处理器', price: '1199元' },
 	],
 	[
-		{ name: '黄芪', description: '64位四核处理器', price: '1199元' },
-		{ name: '当归', description: '64位四核处理器', price: '1199元' },
-		{ name: '防风', description: '64位四核处理器', price: '1199元' },
-		{ name: '荆芥', description: '64位四核处理器', price: '1199元' },
-		{ name: '红花', description: '64位四核处理器', price: '1199元' },
-	],
-	[
-		{ name: '龙眼肉', description: '64位四核处理器', price: '1199元' },
-		{ name: '阿胶', description: '64位四核处理器', price: '1199元' },
-		{ name: '枸杞', description: '64位四核处理器', price: '1199元' },
+		{ name: '当归生姜羊肉汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '核桃人参汤', description: '64位四核处理器', price: '1199元' },
+		{ name: '虫草炖鸡', description: '64位四核处理器', price: '1199元' },
+		{ name: '苁蓉羊肾汤', description: '64位四核处理器', price: '1199元' },
 	]
 ]
 

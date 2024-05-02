@@ -35,9 +35,6 @@ html {
   font-size: 2.3vh;
   transition: transform var(--transition-duration) ease-in-out;
 }
-.navbar.hide {
-  transform: translateY(-100%);
-}
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
     position: absolute;
