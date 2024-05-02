@@ -6,12 +6,12 @@ body {
 
 .sideBar {
     position: fixed;
-    left: 1.1vw;
+    left: 1.9vw;
     top: 50%;
 
     transform: translateY(-50%);
 
-    width: 15vw;
+    width: 19vw;
 
     @media (min-width: 768px) {
         left: 1vw;
@@ -48,7 +48,7 @@ body {
 }
 
 .content {
-    width: 85vw;
+    width: 80vw;
     margin-right: 0;
 
     @media (min-width: 768px) {
@@ -70,8 +70,14 @@ body {
             @media (max-width: 768px) {
                 flex-direction: row;
 
-                img {
+                .imgBox {
                     width: 40%;
+
+                    img {
+                        height: 100%;
+                        border-radius: 0;
+                        object-fit: cover;
+                    }
                 }
             }
 
@@ -106,6 +112,7 @@ body {
                 justify-content: space-between;
 
                 @media (max-width: 768px) {
+
                     .name,
                     .description,
                     .price {
@@ -114,6 +121,8 @@ body {
                 }
 
                 .name {
+                    margin: 0;
+
                     font-size: 2.2vh;
 
                     @media (min-width: 768px) {
@@ -122,6 +131,8 @@ body {
                 }
 
                 .description {
+                    margin: 1vh 0;
+
                     font-size: 1.8vh;
 
                     @media (min-width: 768px) {
