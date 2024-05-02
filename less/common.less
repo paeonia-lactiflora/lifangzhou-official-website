@@ -30,6 +30,7 @@ html {
     --main-color: #ddd8b5;
     --huawei-color: #c7000b;
     --transition-duration: .3s;
+    --bs-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15);
 
     caret-color: var(--main-color) !important;
 }
@@ -117,6 +118,14 @@ html {
         }
     }
 
+    .dropdown {
+        .dropdown-menu {
+            a {
+                padding: 1vh 1vw;
+            }
+        }
+    }
+
     .flicker {
         @keyframes flicker {
             to {
@@ -135,6 +144,7 @@ html {
 
     a {
         transition: all var(--transition-duration);
+
         &:hover {
             color: #000;
             text-decoration: underline;

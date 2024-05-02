@@ -67,7 +67,7 @@ body {
   }
   .content .goods-container .card .imgBox {
     height: 18vh;
-    width: 50%;
+    flex: 1;
   }
   .content .goods-container .card .imgBox img {
     height: 100%;
@@ -97,6 +97,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 .content .goods-container .card .card-body .name,
 .content .goods-container .card .card-body .description,
@@ -133,7 +134,7 @@ body {
 }
 .content .goods-container .card:hover {
   transform: translateY(-0.5vh);
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+  box-shadow: var(--bs-shadow);
   color: #000;
 }
 .content .goods-container .card:active {

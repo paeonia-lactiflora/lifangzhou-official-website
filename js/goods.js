@@ -106,7 +106,7 @@ const herb_info = [
 			name: '薏米冬瓜骨头汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://www.jucanw.com/UploadFiles/2013-08/mengli/2013082216074963138.jpg'
 		},
 	],
 	[
@@ -376,3 +376,5 @@ navbarToggler.addEventListener('click', () => {
 	const sidebar = document.querySelector('.sideBar') // 侧边栏
 	sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none' // 切换显示状态
 })
+
+

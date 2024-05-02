@@ -21,6 +21,7 @@ html {
   --main-color: #ddd8b5;
   --huawei-color: #c7000b;
   --transition-duration: 0.3s;
+  --bs-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15);
   caret-color: var(--main-color) !important;
 }
 * ::selection {
@@ -86,6 +87,9 @@ html {
 }
 .navbar .navbar-nav .nav-item .nav-link {
   padding: 0;
+}
+.navbar .dropdown .dropdown-menu a {
+  padding: 1vh 1vw;
 }
 .navbar .flicker {
   animation: flicker 0.2s infinite alternate;
