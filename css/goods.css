@@ -152,7 +152,6 @@ body {
   align-items: center;
   height: var(--original-width);
   background-color: #fff;
-  border: 2px solid var(--main-color);
   border-radius: 50%;
   cursor: pointer;
   transition: all var(--transition-duration);

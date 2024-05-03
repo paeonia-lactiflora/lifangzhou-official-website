@@ -18,8 +18,10 @@
   transform: translateX(-50%);
 }
 html {
-  --main-color: #ddd8b5;
+  --lfz-color: #ddd8b5;
   --huawei-color: #c7000b;
+  --huawei-hover-color: #850F12;
+  --main-color: var(--huawei-color);
   --transition-duration: 0.3s;
   --bs-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15);
   caret-color: var(--main-color) !important;
@@ -74,6 +76,9 @@ html {
 }
 .navbar .navbar-nav .nav-item {
   position: relative;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link {
+  color: var(--main-color);
 }
 .navbar .navbar-nav .nav-item:hover::after {
   position: absolute;

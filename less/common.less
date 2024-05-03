@@ -25,10 +25,12 @@
     }
 }
 
-// -------------------------------------------
 html {
-    --main-color: #ddd8b5;
+    --lfz-color: #ddd8b5;
     --huawei-color: #c7000b;
+    --huawei-hover-color: #850F12;
+    --main-color: var(--huawei-color);
+
     --transition-duration: .3s;
     --bs-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15);
 
@@ -97,6 +99,10 @@ html {
             position: relative;
 
             &:hover {
+                .nav-link {
+                    color: var(--main-color);
+                }
+
                 &::after {
                     position: absolute;
                     left: 50%;

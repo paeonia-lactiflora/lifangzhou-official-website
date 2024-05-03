@@ -1,77 +1,8 @@
-.navbar {
-  background-color: #fff !important;
-  font-size: 2.2vh;
-  transition: transform var(--transition-duration) ease-in-out;
-}
-.navbar.hide {
-  transform: translateY(-100%);
-}
-@media (min-width: 992px) {
-  .navbar .navbar-collapse {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-  margin-right: 0;
-  margin-left: 1.5vh;
-  padding: 0;
-}
-@media (min-width: 768px) {
-  .navbar .navbar-brand {
-    margin-left: 6vh;
-  }
-}
-.navbar .navbar-brand img {
-  height: 8vh;
-}
-.navbar .navbar-brand span {
-  margin-left: 0.6vh;
-  font-family: 'Times New Roman', Times, serif;
-  font-size: 3.5vh;
-  font-weight: 500;
-}
-.navbar .navbar-nav {
-  gap: 5vh;
-}
-@media (max-width: 992px) {
-  .navbar .navbar-nav {
-    margin-top: 3vh;
-  }
-}
-.navbar .navbar-nav .nav-item {
-  position: relative;
-}
-.navbar .navbar-nav .nav-item:hover::after {
-  position: absolute;
-  left: 50%;
-  bottom: -1vh;
-  content: '';
-  width: 35%;
-  height: 0.3vh;
-  background-color: var(--main-color);
-  transform: translateX(-50%);
-}
-.navbar .navbar-nav .nav-item .nav-link {
-  padding: 0;
-}
-.navbar .flicker {
-  animation: flicker 0.2s infinite alternate;
-}
-@keyframes flicker {
-  to {
-    color: var(--main-color);
-  }
-}
 .carousel {
   margin-bottom: 7vh;
 }
 .carousel .carousel-indicators button {
   width: 15vh;
-  background-color: var(--main-color);
 }
 .carousel .carousel-indicators button:first-child {
   margin-right: 1vh;
@@ -163,11 +94,34 @@
 .herb-culture {
   margin-bottom: 7vh;
 }
+.herb-culture .imgBox .box-pc {
+  position: relative;
+}
+.herb-culture .imgBox .box-pc .more {
+  position: absolute;
+  top: 34vh;
+  left: 14.7vw;
+  padding: 1vh 4vh;
+  background-color: var(--huawei-color);
+  border-radius: 0 !important;
+  font-size: 1.8vh;
+  color: #fff;
+  transition: all var(--transition-duration);
+}
+.herb-culture .imgBox .box-pc .more:hover {
+  background-color: var(--huawei-hover-color);
+  border-color: var(--huawei-hover-color);
+  color: #fff;
+}
+.herb-culture .imgBox .box-mb {
+  display: none;
+}
 @media (max-width: 768px) {
-  .herb-culture .imgBox img {
-    width: 100%;
-    height: 35vh;
-    object-fit: cover;
+  .herb-culture .imgBox .box-mb {
+    display: block;
+  }
+  .herb-culture .imgBox .box-pc {
+    display: none;
   }
 }
 .news {
