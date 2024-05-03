@@ -217,7 +217,7 @@ body {
   }
 }
 #cartModal .modal-header .btn-close:focus {
-  box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, 0.25);
+  box-shadow: var(--bs-nice-shadow);
 }
 #cartModal .modal-body {
   font-size: 2.4vh;
@@ -230,7 +230,7 @@ body {
 #cartModal .modal-body .form-check .form-check-input:checked {
   background-color: var(--main-color) !important;
   border-color: var(--main-color) !important;
-  box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, 0.25);
+  box-shadow: var(--bs-nice-shadow);
 }
 #cartModal .modal-body .form-check label,
 #cartModal .modal-body .form-check input {
@@ -243,7 +243,7 @@ body {
 }
 #cartModal .modal-footer button:active,
 #cartModal .modal-footer button:focus {
-  box-shadow: 0 0 0 0.25rem rgba(221, 216, 181, 0.25);
+  box-shadow: var(--bs-nice-shadow);
 }
 #cartModal .modal-footer button:active {
   transform: scale(0.95);
