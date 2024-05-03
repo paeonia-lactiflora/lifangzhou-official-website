@@ -27,11 +27,17 @@
 
 html {
     --lfz-color: #ddd8b5;
+
     --huawei-color: #c7000b;
+    --huawei-color-rgb: 199, 0, 11;
     --huawei-hover-color: #850F12;
+
     --main-color: var(--huawei-color);
+    --main-color-rgb: var(--huawei-color-rgb);
+
 
     --transition-duration: .3s;
+    --bs-nice-shadow: 0 0 0 0.25rem rgba(var(--main-color-rgb), .25);
     --bs-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15);
 
     caret-color: var(--main-color) !important;
@@ -54,6 +60,11 @@ html {
     font-size: 2.3vh;
 
     transition: transform var(--transition-duration) ease-in-out;
+
+    .navbar-toggler:focus {
+        box-shadow: var(--bs-nice-shadow);
+        border-color: var(--main-color);
+    }
 
     .navbar-collapse {
         @media (min-width: 992px) {
