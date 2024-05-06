@@ -66,6 +66,9 @@
 }
 .recommendInfo .content .imgBox img {
   transition: transform var(--transition-duration) ease-in-out;
+  width: 39.75rem;
+  height: 27.6875rem;
+  object-fit: cover;
 }
 .recommendInfo .content .imgBox:hover .textBox {
   bottom: 2.5vh;
@@ -86,7 +89,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
   opacity: 0;
   transition: opacity var(--transition-duration) ease-in-out;
 }

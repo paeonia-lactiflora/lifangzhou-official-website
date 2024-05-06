@@ -206,31 +206,31 @@ const herb_info = [
 			name: '黄芪炖鸡',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://pic.pingguolv.com/uploads/allimg/180530/148-1P530194152.jpg'
 		},
 		{
 			name: '参枣汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://media.hsrb.com.cn/image/2022/01/13/5145627733795192403.jpg'
 		},
 		{
 			name: '参杞羊肉汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://p1.ssl.qhimg.com/t01ee6d1d622f4903fc.jpg'
 		},
 		{
 			name: '鳝鱼补气汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://cdn.fanhonghua.net/uploads/2016/11/sy3.jpg'
 		},
 		{
 			name: '西洋参养生汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.zcool.cn/community/031a6qtqqgcvtzcg8pexlsv3937.png'
 		},
 	],
 	[
@@ -238,13 +238,13 @@ const herb_info = [
 			name: '赤小豆薏苡仁',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.alicdn.com/i4/2200608599252/O1CN01JQmOtY2IDSzUiAoOd_!!2200608599252.jpg'
 		},
 		{
 			name: '车前草赤小豆煲猪小肚',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://life.sun0769.com/shb/202305/W020230521285801824987.png'
 		},
 	],
 	[
@@ -252,19 +252,19 @@ const herb_info = [
 			name: '黑豆红花汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://file.youlai.cn/cnkfile1/M00/19/F0/ooYBAFo6Qq2ATWU2AAFT7O4gNdo49.jpeg'
 		},
 		{
 			name: '山楂汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://www1.pcbaby.com.cn/baike/recipe/pic/20160313spk1/27811.jpg'
 		},
 		{
 			name: '红花乌鸡汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://bpic.588ku.com/back_origin_min_pic/19/10/22/862115ecc625ae1e0e3ca239e5bba3b6.jpg!/fw/750/quality/99/unsharp/true/compress/true'
 		},
 	],
 	[
@@ -272,31 +272,31 @@ const herb_info = [
 			name: '玫瑰花鸡蛋汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://gd-hbimg.huaban.com/901efb5f122b1541f22218ffdca7398be7d75e4c3786b-hbeoHL_fw658'
 		},
 		{
 			name: '佛手甲鱼汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://ts1.cn.mm.bing.net/th/id/R-C.41d240444090f740fe2bb0bf4aa2d3fb?rik=%2bmyYvBNMfKW8rw&riu=http%3a%2f%2fwww.meishijr.com%2fupload%2f20131023%2f13825357709936.jpg&ehk=%2fFQ1yH9rO%2fPhv1wiCSWtMkvaY7zsmEyphUCQk21vnPQ%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1'
 		},
 		{
 			name: '菊花鸡肝汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://p1.ssl.qhimg.com/dr/220__/t01cf1f52ca1e835f3f.jpg'
 		},
 		{
 			name: '合欢花猪肝汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.pconline.com.cn/images/upload/upc/tx/kidsphotolib_bbs/1707/12/c1/52539989_1499842581563.jpg'
 		},
 		{
 			name: '玫瑰解郁汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://gd-hbimg.huaban.com/08642dc0617473f90c0ba11907af0ddef84f5cd41c1f6-0ffqNO_fw658'
 		},
 	],
 	[
@@ -304,25 +304,25 @@ const herb_info = [
 			name: '当归生姜羊肉汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://www.shantou.gov.cn/stswsj/img/0/215/215530/1997295.jpg'
 		},
 		{
 			name: '核桃人参汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.zcool.cn/community/01a6955d6b6bc3a80120526d4e6cfd.jpg@1280w_1l_2o_100sh.jpg'
 		},
 		{
 			name: '虫草炖鸡',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://pic.ecook.cn/web/262828093.jpg!wd780'
 		},
 		{
 			name: '苁蓉羊肾汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img95.699pic.com/photo/50250/6921.jpg_wh300.jpg'
 		},
 	]
 ]
