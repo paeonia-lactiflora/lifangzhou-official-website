@@ -27,6 +27,7 @@ html {
   --transition-duration: 0.3s;
   --bs-nice-shadow: 0 0 0 0.25rem rgba(var(--main-color-rgb), 0.25);
   --bs-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb), 0.15);
+  --bs-shadow-active: 0 0.25rem 0.5rem rgba(var(--bs-body-color-rgb), 0.15);
   caret-color: var(--main-color) !important;
 }
 * ::selection {
@@ -44,6 +45,9 @@ html {
 .navbar .navbar-toggler:focus {
   box-shadow: var(--bs-nice-shadow);
   border-color: var(--main-color);
+}
+.navbar .navbar-toggler .badge {
+  display: none;
 }
 @media (min-width: 992px) {
   .navbar .navbar-collapse {
@@ -94,6 +98,7 @@ html {
   content: '';
   width: 35%;
   height: 0.3vh;
+  border-radius: 999rem;
   background-color: var(--main-color);
   transform: translateX(-50%);
 }

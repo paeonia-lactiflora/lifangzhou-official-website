@@ -139,6 +139,7 @@ body {
 }
 .content .goods-container .card:active {
   transform: translateY(0vh);
+  box-shadow: var(--bs-shadow-active);
 }
 .cart {
   --original-width: 8vh;

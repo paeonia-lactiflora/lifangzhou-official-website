@@ -39,6 +39,7 @@ html {
     --transition-duration: .3s;
     --bs-nice-shadow: 0 0 0 0.25rem rgba(var(--main-color-rgb), .25);
     --bs-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15);
+    --bs-shadow-active: 0 .25rem .5rem rgba(var(--bs-body-color-rgb), .15);
 
     caret-color: var(--main-color) !important;
 }
@@ -61,9 +62,15 @@ html {
 
     transition: transform var(--transition-duration) ease-in-out;
 
-    .navbar-toggler:focus {
-        box-shadow: var(--bs-nice-shadow);
-        border-color: var(--main-color);
+    .navbar-toggler {
+        &:focus {
+            box-shadow: var(--bs-nice-shadow);
+            border-color: var(--main-color);
+        }
+
+        .badge {
+            display: none;
+        }
     }
 
     .navbar-collapse {
@@ -123,6 +130,7 @@ html {
 
                     width: 35%;
                     height: .3vh;
+                    border-radius: 999rem;
                     background-color: var(--main-color);
 
                     transform: translateX(-50%);

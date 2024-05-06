@@ -114,31 +114,31 @@ const herb_info = [
 			name: '黄芪',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.zcool.cn/community/01d15c5d0743f8a801213ec258d8e7.jpg@1280w_1l_2o_100sh.jpg'
 		},
 		{
 			name: '当归',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img95.699pic.com/photo/50133/1777.jpg_wh300.jpg'
 		},
 		{
 			name: '防风',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.ixintu.com/download/jpg/202001/11ff244c74cdc3b80de9bce6ac836a18.jpg!con'
 		},
 		{
 			name: '荆芥',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://i.zyccst.com/upload/upay/825043/2/E88D86E88AA5332E6A7067.jpg'
 		},
 		{
 			name: '红花',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://cdn.fanhonghua.net/1810/1539771039721054.jpg'
 		},
 	],
 	[
@@ -146,19 +146,19 @@ const herb_info = [
 			name: '龙眼肉',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://tse2-mm.cn.bing.net/th/id/OIP-C.fn7xFENAlXn6iYuAmo0cpwAAAA?rs=1&pid=ImgDetMain'
 		},
 		{
 			name: '阿胶',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.zcool.cn/community/01f71b5ca81012a801208f8b746c06.jpg@1280w_1l_2o_100sh.jpg'
 		},
 		{
 			name: '枸杞',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.huabaike.com/tukuimgs/663/20200923133706_203540.jpg'
 		},
 	],
 	[
@@ -166,7 +166,7 @@ const herb_info = [
 			name: '黄精炖肉',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://p1.ssl.qhimg.com/t01941af620568d57b3.jpg'
 		},
 	],
 	[
@@ -174,31 +174,31 @@ const herb_info = [
 			name: '银耳鸡蛋汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://img.zcool.cn/community/0179b55bc865bba8012099c8dd8c24.jpg@2o.jpg'
 		},
 		{
 			name: '沙参麦冬瘦肉汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: '/img/herb/ssmdsrt.png'
 		},
 		{
 			name: '雪羹汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://so1.360tres.com/t01600172bb624065a7.png'
 		},
 		{
 			name: '甲鱼枸杞汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: '/img/herb/jygqt.png'
 		},
 		{
 			name: '石斛麦冬汤',
 			description: '64位四核处理器',
 			price: '1199元',
-			imgUrl: 'https://img.zcool.cn/community/01f8885c55aa00a801213f26d50e8b.jpg@1280w_1l_2o_100sh.jpg'
+			imgUrl: 'https://cdn.fanhonghua.net/uploads/2017/01/cf3.jpg'
 		},
 	],
 	[
