@@ -71,7 +71,7 @@
 }
 .recommendInfo .content .row {
   margin: 0 auto;
-  width: 69vw;
+  width: 65vw;
   gap: 3vw;
 }
 .recommendInfo .content .row:first-of-type {
@@ -84,7 +84,7 @@
 }
 .recommendInfo .content .imgBox img {
   transition: transform var(--transition-duration) ease-in-out;
-  height: 40vh;
+  height: 45vh;
   object-fit: cover;
 }
 .recommendInfo .content .imgBox:hover .textBox {
