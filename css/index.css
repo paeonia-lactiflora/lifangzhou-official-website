@@ -83,7 +83,6 @@
 .recommendInfo .content .imgBox img {
   transition: transform var(--transition-duration) ease-in-out;
   height: 40vh;
-  width: 100%;
   object-fit: cover;
 }
 .recommendInfo .content .imgBox:hover .textBox {
