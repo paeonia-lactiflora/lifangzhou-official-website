@@ -1,11 +1,21 @@
 @media (min-width: 768px) {
-  .navbar {
+  .navbar-temp {
     position: fixed;
     z-index: 999;
     width: 100%;
   }
-  .navbar.hide {
+  .navbar-temp.hide {
     top: -100%;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 .carousel {
@@ -38,7 +48,7 @@
 }
 .carousel .carousel-inner .carousel-item img {
   width: 100%;
-  height: 100vh;
+  height: 75vh;
   object-fit: cover;
 }
 @media (max-width: 768px) {
@@ -59,6 +69,12 @@
 .recommendInfo {
   margin-bottom: 10vh;
 }
+.recommendInfo .content .row {
+  gap: 3vw;
+}
+.recommendInfo .content .row:first-of-type {
+  margin-bottom: 3vw;
+}
 .recommendInfo .content .imgBox {
   position: relative;
   overflow: hidden;
@@ -66,8 +82,7 @@
 }
 .recommendInfo .content .imgBox img {
   transition: transform var(--transition-duration) ease-in-out;
-  width: 39.75rem;
-  height: 27.6875rem;
+  height: 40vh;
   object-fit: cover;
 }
 .recommendInfo .content .imgBox:hover .textBox {

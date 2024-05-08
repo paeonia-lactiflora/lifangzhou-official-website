@@ -1,4 +1,4 @@
-.navbar {
+.navbar-temp {
     @media (min-width: 768px) {
         position: fixed;
         z-index: 999;
@@ -8,6 +8,19 @@
         &.hide {
             top: -100%;
         }
+    }
+}
+
+// 淡入与位移
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -51,7 +64,8 @@
         .carousel-item {
             img {
                 width: 100%;
-                height: 100vh;
+                // height: 100vh;
+                height: 75vh;
                 object-fit: cover;
             }
         }
@@ -84,6 +98,14 @@
     margin-bottom: 10vh;
 
     .content {
+        .row {
+            gap: 3vw;
+
+            &:first-of-type {
+                margin-bottom: 3vw;
+            }
+        }
+
         .imgBox {
             position: relative;
             overflow: hidden;
@@ -91,8 +113,10 @@
 
             img {
                 transition: transform var(--transition-duration) ease-in-out;
-                width: 39.75rem;
-                height: 27.6875rem;
+                // width: 39.75rem;
+                // height: 27.6875rem;
+                // width: 20vw;
+                height: 40vh;
                 object-fit: cover;
             }
 

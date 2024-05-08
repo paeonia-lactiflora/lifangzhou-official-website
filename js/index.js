@@ -26,4 +26,4 @@ function toggleNavBar() {
 	}
 }
 
-toggleNavBar()
+// toggleNavBar()
