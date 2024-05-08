@@ -99,8 +99,11 @@
 
     .content {
         .row {
-            margin: 0 auto;
-            width: 65vw;
+            @media (min-width: 768px) {
+                margin: 0 auto;
+                width: 65vw;
+            }
+
             gap: 3vw;
 
             &:first-of-type {

@@ -70,9 +70,13 @@
   margin-bottom: 10vh;
 }
 .recommendInfo .content .row {
-  margin: 0 auto;
-  width: 65vw;
   gap: 3vw;
+}
+@media (min-width: 768px) {
+  .recommendInfo .content .row {
+    margin: 0 auto;
+    width: 65vw;
+  }
 }
 .recommendInfo .content .row:first-of-type {
   margin-bottom: 3vw;
