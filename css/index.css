@@ -70,6 +70,7 @@
   margin-bottom: 10vh;
 }
 .recommendInfo .content .row {
+  width: 69vw;
   gap: 3vw;
 }
 .recommendInfo .content .row:first-of-type {
