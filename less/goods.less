@@ -1,318 +1,318 @@
 body {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .sideBar {
-    position: fixed;
-    left: 1.9vw;
-    top: 50%;
+  position: fixed;
+  left: 1.9vw;
+  top: 50%;
 
-    transform: translateY(-50%);
+  transform: translateY(-50%);
 
-    width: 19vw;
+  width: 19vw;
 
-    @media (min-width: 768px) {
-        left: 1vw;
-        width: 8vw;
-    }
+  @media (min-width: 768px) {
+    left: 1vw;
+    width: 8vw;
+  }
 
-    .list-group {
-        .list-group-item {
-            padding: 2vh 0;
+  .list-group {
+    .list-group-item {
+      padding: 2vh 0;
 
-            font-size: 2vh;
-            text-align: center;
+      font-size: 2vh;
+      text-align: center;
 
-            cursor: pointer;
+      cursor: pointer;
 
-            @media (min-width: 768px) {
-                font-size: 2vh;
-            }
+      @media (min-width: 768px) {
+        font-size: 2vh;
+      }
 
-            &:hover {
-                color: var(--main-color);
-            }
+      &:hover {
+        color: var(--main-color);
+      }
 
-            &.active {
-                border-color: var(--main-color);
-                background-color: var(--main-color);
+      &.active {
+        border-color: var(--main-color);
+        background-color: var(--main-color);
 
-                &:hover {
-                    color: #fff;
-                }
-            }
+        &:hover {
+          color: #fff;
         }
+      }
     }
+  }
 }
 
 .content {
-    width: 80vw;
-    margin-right: 0;
+  width: 80vw;
+  margin-right: 0;
 
-    @media (min-width: 768px) {
-        width: 90vw;
-        margin-right: .3vw;
-    }
+  @media (min-width: 768px) {
+    width: 90vw;
+    margin-right: .3vw;
+  }
 
-    .goods-container {
-        padding: 4vh 0;
+  .goods-container {
+    padding: 4vh 0;
 
-        .card {
-            position: relative;
+    .card {
+      position: relative;
 
-            border: none;
-            cursor: pointer;
+      border: none;
+      cursor: pointer;
 
-            transition: all var(--transition-duration);
-            overflow: hidden;
+      transition: all var(--transition-duration);
+      overflow: hidden;
 
-            .imgBox {
-                img {
-                    width: 100%;
-                    height: 19vh;
+      .imgBox {
+        img {
+          width: 100%;
+          height: 19vh;
 
-                    border-radius: 0;
-                    object-fit: cover;
-                }
-            }
-
-            @media (max-width: 768px) {
-                flex-direction: row;
-
-                .imgBox {
-                    height: 18vh;
-                    // width: 50%;
-                    flex: 1;
-
-                    img {
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-            }
-
-            .iconfont {
-                position: absolute;
-                top: .8vh;
-                right: .8vh;
-
-                width: 3vh;
-                height: 3vh;
-
-                background-color: red;
-                border-radius: 50%;
-
-                font-size: 1.5vh;
-                font-weight: bold;
-                color: #fff;
-                text-align: center;
-                line-height: 3vh;
-
-                transition: all var(--transition-duration);
-
-                &:active {
-                    transform: scale(.8);
-                }
-            }
-
-            .card-body {
-                padding: 3.5vh 0;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                flex: 1;
-
-                .name,
-                .description,
-                .price {
-                    margin-bottom: 0;
-                }
-
-                .name {
-                    margin: 0;
-
-                    font-size: 2.2vh;
-
-                    @media (min-width: 768px) {
-                        font-size: 2.5vh;
-                    }
-                }
-
-                .description {
-                    font-size: 1.8vh;
-                    color: gray;
-
-                    @media (min-width: 768px) {
-                        margin: 1vh 0;
-                        font-size: 1.8vh;
-                    }
-                }
-
-                .price {
-                    font-size: 2vh;
-                    color: red;
-
-                    @media (min-width: 768px) {
-                        font-size: 1.7vh;
-                    }
-                }
-            }
-
-            &:hover {
-                transform: translateY(-.5vh);
-                box-shadow: var(--bs-shadow);
-                color: #000;
-            }
-
-            &:active {
-                transform: translateY(0vh);
-                box-shadow: var(--bs-shadow-active);
-            }
+          border-radius: 0;
+          object-fit: cover;
         }
+      }
+
+      @media (max-width: 768px) {
+        flex-direction: row;
+
+        .imgBox {
+          height: 18vh;
+          // width: 50%;
+          flex: 1;
+
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .iconfont {
+        position: absolute;
+        top: .8vh;
+        right: .8vh;
+
+        width: 3vh;
+        height: 3vh;
+
+        background-color: red;
+        border-radius: 50%;
+
+        font-size: 1.5vh;
+        font-weight: bold;
+        color: #fff;
+        text-align: center;
+        line-height: 3vh;
+
+        transition: all var(--transition-duration);
+
+        &:active {
+          transform: scale(.8);
+        }
+      }
+
+      .card-body {
+        padding: 3.5vh 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+
+        .name,
+        .description,
+        .price {
+          margin-bottom: 0;
+        }
+
+        .name {
+          margin: 0;
+
+          font-size: 2.2vh;
+
+          @media (min-width: 768px) {
+            font-size: 2.5vh;
+          }
+        }
+
+        .description {
+          font-size: 1.8vh;
+          color: gray;
+
+          @media (min-width: 768px) {
+            margin: 1vh 0;
+            font-size: 1.8vh;
+          }
+        }
+
+        .price {
+          font-size: 2vh;
+          color: red;
+
+          @media (min-width: 768px) {
+            font-size: 1.7vh;
+          }
+        }
+      }
+
+      &:hover {
+        transform: translateY(-.5vh);
+        box-shadow: var(--bs-shadow);
+        color: #000;
+      }
+
+      &:active {
+        transform: translateY(0vh);
+        box-shadow: var(--bs-shadow-active);
+      }
     }
+  }
 }
 
 .cart {
-    --original-width: 8vh;
-    --big-width: 11vh;
-    --right-show: 4vh;
-    --right-hide: -4.5vh;
+  --original-width: 8vh;
+  --big-width: 11vh;
+  --right-show: 4vh;
+  --right-hide: -4.5vh;
 
-    @media (min-width: 1200px) {
-        --right-show: 7vh;
-        --right-hide: -4vh;
+  @media (min-width: 1200px) {
+    --right-show: 7vh;
+    --right-hide: -4vh;
+  }
+
+  position: fixed;
+  bottom: var(--right-show);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: var(--original-width);
+
+  background-color: #fff;
+  // border: 2px solid var(--main-color);
+  border-radius: 50%;
+
+  cursor: pointer;
+  transition: all var(--transition-duration);
+  animation: cartAnmShow .6s cubic-bezier(1, 0, .7, 1) forwards;
+
+  color: var(--main-color);
+
+  &.hide {
+    animation: cartAnmHide .6s cubic-bezier(1, 0, .7, 1) forwards;
+  }
+
+  &:hover {
+    background-color: var(--main-color);
+    color: #fff;
+    // box-shadow: 0 0.5rem 1rem 2px rgba(0, 0, 0, 0.2);
+
+    // transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(.9);
+    // box-shadow: 0 0.2rem 1rem 1px rgba(0, 0, 0, 0.1);
+  }
+
+  .badge {
+    display: none;
+    top: 1vh !important;
+    left: .7vw !important;
+    border-radius: 50% !important;
+    font-size: 1.5vh;
+  }
+
+  .iconfont {
+    font-size: 4vh;
+  }
+
+  @keyframes cartAnmHide {
+    0% {
+      right: var(--right-show);
+      width: var(--original-width);
+      box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
     }
 
-    position: fixed;
-    bottom: var(--right-show);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: var(--original-width);
-
-    background-color: #fff;
-    // border: 2px solid var(--main-color);
-    border-radius: 50%;
-
-    cursor: pointer;
-    transition: all var(--transition-duration);
-    animation: cartAnmShow .6s cubic-bezier(1, 0, .7, 1) forwards;
-
-    color: var(--main-color);
-
-    &.hide {
-        animation: cartAnmHide .6s cubic-bezier(1, 0, .7, 1) forwards;
+    50% {
+      width: var(--big-width);
     }
 
-    &:hover {
-        background-color: var(--main-color);
-        color: #fff;
-        // box-shadow: 0 0.5rem 1rem 2px rgba(0, 0, 0, 0.2);
+    100% {
+      width: var(--original-width);
+      opacity: .5;
+      right: var(--right-hide);
+      box-shadow: none;
+    }
+  }
 
-        // transform: scale(1.2);
+  @keyframes cartAnmShow {
+    0% {
+      width: var(--original-width);
+      opacity: .5;
+      right: var(--right-hide);
     }
 
-    &:active {
-        transform: scale(.9);
-        // box-shadow: 0 0.2rem 1rem 1px rgba(0, 0, 0, 0.1);
+    50% {
+      width: var(--big-width);
     }
 
-    .badge {
-        display: none;
-        top: 1vh !important;
-        left: .7vw !important;
-        border-radius: 50% !important;
-        font-size: 1.5vh;
+    100% {
+      width: var(--original-width);
+      opacity: 1;
+      right: var(--right-show);
+      box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
     }
-
-    .iconfont {
-        font-size: 4vh;
-    }
-
-    @keyframes cartAnmHide {
-        0% {
-            right: var(--right-show);
-            width: var(--original-width);
-            box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
-        }
-
-        50% {
-            width: var(--big-width);
-        }
-
-        100% {
-            width: var(--original-width);
-            opacity: .5;
-            right: var(--right-hide);
-            box-shadow: none;
-        }
-    }
-
-    @keyframes cartAnmShow {
-        0% {
-            width: var(--original-width);
-            opacity: .5;
-            right: var(--right-hide);
-        }
-
-        50% {
-            width: var(--big-width);
-        }
-
-        100% {
-            width: var(--original-width);
-            opacity: 1;
-            right: var(--right-show);
-            box-shadow: 0 0.1rem 1rem 1px rgba(0, 0, 0, 0.1);
-        }
-    }
+  }
 }
 
 #cartModal {
-    .modal-header {
-        .btn-close:focus {
-            box-shadow: var(--bs-nice-shadow);
-        }
+  .modal-header {
+    .btn-close:focus {
+      box-shadow: var(--bs-nice-shadow);
+    }
+  }
+
+  .modal-body {
+    padding: 2.5vh 1vw;
+    font-size: 2.4vh;
+
+    @media (min-width: 1200px) {
+      font-size: 1.8vh;
     }
 
-    .modal-body {
-        padding: 2.5vh 1vw;
-        font-size: 2.4vh;
+    .form-check {
+      .form-check-input:checked {
+        background-color: var(--main-color) !important;
+        border-color: var(--main-color) !important;
+        box-shadow: var(--bs-nice-shadow);
+      }
 
-        @media (min-width: 1200px) {
-            font-size: 1.8vh;
-        }
-
-        .form-check {
-            .form-check-input:checked {
-                background-color: var(--main-color) !important;
-                border-color: var(--main-color) !important;
-                box-shadow: var(--bs-nice-shadow);
-            }
-
-            label,
-            input {
-                cursor: pointer;
-            }
-        }
+      label,
+      input {
+        cursor: pointer;
+      }
     }
+  }
 
-    .modal-footer {
-        button {
-            transition: transform var(--transition-duration);
-            background-color: var(--main-color) !important;
-            border-color: var(--main-color) !important;
+  .modal-footer {
+    button {
+      transition: transform var(--transition-duration);
+      background-color: var(--main-color) !important;
+      border-color: var(--main-color) !important;
 
-            &:active,
-            &:focus {
-                box-shadow: var(--bs-nice-shadow);
-            }
+      &:active,
+      &:focus {
+        box-shadow: var(--bs-nice-shadow);
+      }
 
-            &:active {
-                transform: scale(.95);
-            }
-        }
+      &:active {
+        transform: scale(.95);
+      }
     }
+  }
 }

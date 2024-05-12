@@ -1,379 +1,379 @@
 .navbar-temp {
-    @media (min-width: 768px) {
-        position: fixed;
-        z-index: 999;
+  @media (min-width: 768px) {
+    position: fixed;
+    z-index: 999;
 
-        width: 100%;
+    width: 100%;
 
-        &.hide {
-            top: -100%;
-        }
+    &.hide {
+      top: -100%;
     }
+  }
 }
 
 // 淡入与位移
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .carousel {
-    margin: 0 auto 7vh;
+  margin: 0 auto 7vh;
 
-    @media (min-width: 768px) {
-        animation: zoom linear forwards;
-        animation-timeline: scroll();
-        animation-range: 0vh 90vh;
+  @media (min-width: 768px) {
+    animation: zoom linear forwards;
+    animation-timeline: scroll();
+    animation-range: 0vh 90vh;
 
 
-        @keyframes zoom {
-            from {
-                width: 100%;
-            }
+    @keyframes zoom {
+      from {
+        width: 100%;
+      }
 
-            to {
-                width: 68%;
-                border-radius: .3rem;
-            }
-        }
+      to {
+        width: 68%;
+        border-radius: .3rem;
+      }
     }
+  }
 
-    .carousel-indicators {
-        button {
-            &:first-child {
-                margin-right: 1vh;
-            }
+  .carousel-indicators {
+    button {
+      &:first-child {
+        margin-right: 1vh;
+      }
 
-            &:last-child {
-                margin-left: 1vh;
-            }
+      &:last-child {
+        margin-left: 1vh;
+      }
 
-            width: 15vh;
-            // background-color: var(--main-color);
-        }
+      width: 15vh;
+      // background-color: var(--main-color);
     }
+  }
 
+  .carousel-inner {
+    .carousel-item {
+      img {
+        width: 100%;
+        // height: 100vh;
+        height: 75vh;
+        object-fit: cover;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
     .carousel-inner {
-        .carousel-item {
-            img {
-                width: 100%;
-                // height: 100vh;
-                height: 75vh;
-                object-fit: cover;
-            }
+      .carousel-item {
+        img {
+          width: 100%;
+          height: 45vh;
+          object-fit: cover;
         }
+      }
     }
 
-    @media (max-width: 768px) {
-        .carousel-inner {
-            .carousel-item {
-                img {
-                    width: 100%;
-                    height: 45vh;
-                    object-fit: cover;
-                }
-            }
-        }
-
-        .carousel-indicators button {
-            width: 10vh;
-        }
+    .carousel-indicators button {
+      width: 10vh;
     }
+  }
 
-    .carousel-control-next-icon,
-    .carousel-control-prev-icon {
-        width: 4vh;
-        height: 4vh;
-    }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    width: 4vh;
+    height: 4vh;
+  }
 }
 
 .recommendInfo {
-    margin-bottom: 10vh;
+  margin-bottom: 10vh;
 
-    .content {
-        .row {
-            @media (min-width: 768px) {
-                margin: 0 auto;
-                width: 65vw;
-            }
+  .content {
+    .row {
+      @media (min-width: 768px) {
+        margin: 0 auto;
+        width: 65vw;
+      }
 
-            gap: 3vw;
+      gap: 3vw;
 
-            &:first-of-type {
-                margin-bottom: 3vw;
-            }
-        }
-
-        .imgBox {
-            position: relative;
-            overflow: hidden;
-            cursor: pointer;
-
-            img {
-                transition: transform var(--transition-duration) ease-in-out;
-                // width: 39.75rem;
-                // height: 27.6875rem;
-                // width: 20vw;
-                height: 45vh;
-                // width: 100%;
-                object-fit: cover;
-            }
-
-            &:hover {
-                .textBox {
-                    bottom: 2.5vh;
-
-                    .readMore {
-                        opacity: 1;
-                    }
-                }
-
-                .mask {
-                    opacity: 1;
-                }
-
-                img {
-                    transform: scale(1.05);
-                }
-            }
-
-            .mask {
-                position: absolute;
-                z-index: 1;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
-                opacity: 0;
-                transition: opacity var(--transition-duration) ease-in-out;
-            }
-        }
-
-        .textBox {
-            position: absolute;
-            z-index: 2;
-            bottom: -2vh;
-
-            padding: 0 3vh;
-
-            color: #fff;
-
-            transition: all var(--transition-duration) ease-in-out;
-
-            .category {
-                margin-bottom: .5vh !important;
-
-                font-size: 1.8vh;
-            }
-
-            .name {
-                font-size: 2.7vh;
-                font-weight: bold;
-            }
-
-            .readMore {
-                margin-top: 2vh;
-                font-size: 1.9vh;
-                opacity: 0;
-                transition: opacity var(--transition-duration);
-
-                &::after {
-                    content: '>';
-                    color: red;
-                    margin-left: .5vh;
-                }
-            }
-        }
+      &:first-of-type {
+        margin-bottom: 3vw;
+      }
     }
+
+    .imgBox {
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+
+      img {
+        transition: transform var(--transition-duration) ease-in-out;
+        // width: 39.75rem;
+        // height: 27.6875rem;
+        // width: 20vw;
+        height: 45vh;
+        // width: 100%;
+        object-fit: cover;
+      }
+
+      &:hover {
+        .textBox {
+          bottom: 2.5vh;
+
+          .readMore {
+            opacity: 1;
+          }
+        }
+
+        .mask {
+          opacity: 1;
+        }
+
+        img {
+          transform: scale(1.05);
+        }
+      }
+
+      .mask {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+        opacity: 0;
+        transition: opacity var(--transition-duration) ease-in-out;
+      }
+    }
+
+    .textBox {
+      position: absolute;
+      z-index: 2;
+      bottom: -2vh;
+
+      padding: 0 3vh;
+
+      color: #fff;
+
+      transition: all var(--transition-duration) ease-in-out;
+
+      .category {
+        margin-bottom: .5vh !important;
+
+        font-size: 1.8vh;
+      }
+
+      .name {
+        font-size: 2.7vh;
+        font-weight: bold;
+      }
+
+      .readMore {
+        margin-top: 2vh;
+        font-size: 1.9vh;
+        opacity: 0;
+        transition: opacity var(--transition-duration);
+
+        &::after {
+          content: '>';
+          color: red;
+          margin-left: .5vh;
+        }
+      }
+    }
+  }
 }
 
 .herb-culture {
-    margin-bottom: 7vh;
+  margin-bottom: 7vh;
 
-    .imgBox {
-        .box-pc {
-            position: relative;
+  .imgBox {
+    .box-pc {
+      position: relative;
 
-            .more {
-                position: absolute;
-                top: 34vh;
-                left: 14.7vw;
+      .more {
+        position: absolute;
+        top: 34vh;
+        left: 14.7vw;
 
-                padding: 1vh 4vh;
-                background-color: var(--huawei-color);
+        padding: 1vh 4vh;
+        background-color: var(--huawei-color);
 
-                border-radius: 0 !important;
+        border-radius: 0 !important;
 
-                font-size: 1.8vh;
-                color: #fff;
+        font-size: 1.8vh;
+        color: #fff;
 
-                transition: all var(--transition-duration);
+        transition: all var(--transition-duration);
 
-                &:hover {
-                    background-color: var(--huawei-hover-color);
-                    border-color: var(--huawei-hover-color);
-                    color: #fff;
-                }
-            }
+        &:hover {
+          background-color: var(--huawei-hover-color);
+          border-color: var(--huawei-hover-color);
+          color: #fff;
         }
-
-        .box-mb {
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .box-mb {
-                display: block;
-            }
-
-            .box-pc {
-                display: none;
-            }
-        }
-
+      }
     }
+
+    .box-mb {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .box-mb {
+        display: block;
+      }
+
+      .box-pc {
+        display: none;
+      }
+    }
+
+  }
 }
 
 .news {
-    margin-bottom: 5vh;
-    text-align: center;
+  margin-bottom: 5vh;
+  text-align: center;
 
-    .content {
-        .card {
-            border-radius: 0;
-            border: none;
-            background-color: #f8f8f8;
+  .content {
+    .card {
+      border-radius: 0;
+      border: none;
+      background-color: #f8f8f8;
 
-            color: #000;
+      color: #000;
 
-            cursor: pointer;
+      cursor: pointer;
 
-            @media (min-width: 768px) {
-                height: 50vh;
-            }
+      @media (min-width: 768px) {
+        height: 50vh;
+      }
 
 
-            &:hover {
-                background-color: #f2f2f2;
+      &:hover {
+        background-color: #f2f2f2;
 
-                img {
-                    transform: scale(1.05);
-                }
-            }
+        img {
+          transform: scale(1.05);
+        }
+      }
 
-            img,
-            .card-body {
-                border-radius: 0;
-            }
+      img,
+      .card-body {
+        border-radius: 0;
+      }
 
-            img {
-                transition: transform var(--transition-duration) ease-in-out;
-            }
+      img {
+        transition: transform var(--transition-duration) ease-in-out;
+      }
 
-            .card-body {
-                padding: 3vh;
+      .card-body {
+        padding: 3vh;
 
-                .card-title {
-                    font-weight: bold;
-                    font-size: 3vh;
+        .card-title {
+          font-weight: bold;
+          font-size: 3vh;
 
-                    @media (min-width: 1200px) {
-                        font-size: 2.5vh;
-                    }
-                }
-
-                .time {
-                    margin-top: 1vh;
-                    font-size: 1.9vh;
-                }
-
-                .card-text {
-                    margin-top: 1.5vh;
-                    font-size: 2vh;
-                    color: #666;
-
-                    @media (min-width: 1200px) {
-                        font-size: 1.8vh;
-                    }
-                }
-            }
+          @media (min-width: 1200px) {
+            font-size: 2.5vh;
+          }
         }
 
-        .list-group {
-            gap: 3vh;
-
-            height: 50vh;
-            padding: 4vh;
-
-            border-radius: 0;
-            background-color: #f8f8f8;
-
-            .list-group-item {
-                padding: 0;
-
-                border: none;
-                background-color: inherit;
-
-                cursor: pointer;
-
-                h5 {
-                    font-size: 2.5vh;
-                    font-weight: bold;
-
-                    @media (min-width: 1200px) {
-                        font-size: 2vh;
-                    }
-                }
-
-                p {
-                    margin: 0;
-
-                    font-size: 2vh;
-                    color: #666;
-
-                    @media (min-width: 1200px) {
-                        font-size: 1.8vh;
-                    }
-                }
-
-                &:hover {
-                    color: var(--huawei-color);
-
-                    p {
-                        color: var(--huawei-color);
-                    }
-                }
-            }
+        .time {
+          margin-top: 1vh;
+          font-size: 1.9vh;
         }
+
+        .card-text {
+          margin-top: 1.5vh;
+          font-size: 2vh;
+          color: #666;
+
+          @media (min-width: 1200px) {
+            font-size: 1.8vh;
+          }
+        }
+      }
     }
 
-    .btn-group {
-        gap: 10vh;
+    .list-group {
+      gap: 3vh;
 
-        margin-top: 5vh;
+      height: 50vh;
+      padding: 4vh;
 
-        a {
-            padding: 1vh 5vh;
+      border-radius: 0;
+      background-color: #f8f8f8;
 
-            border-color: #111;
-            border-radius: 0 !important;
+      .list-group-item {
+        padding: 0;
 
+        border: none;
+        background-color: inherit;
+
+        cursor: pointer;
+
+        h5 {
+          font-size: 2.5vh;
+          font-weight: bold;
+
+          @media (min-width: 1200px) {
             font-size: 2vh;
-            color: #111;
-
-            &:hover {
-                background-color: var(--main-color);
-                border-color: var(--main-color);
-                color: #fff;
-            }
+          }
         }
+
+        p {
+          margin: 0;
+
+          font-size: 2vh;
+          color: #666;
+
+          @media (min-width: 1200px) {
+            font-size: 1.8vh;
+          }
+        }
+
+        &:hover {
+          color: var(--huawei-color);
+
+          p {
+            color: var(--huawei-color);
+          }
+        }
+      }
     }
+  }
+
+  .btn-group {
+    gap: 10vh;
+
+    margin-top: 5vh;
+
+    a {
+      padding: 1vh 5vh;
+
+      border-color: #111;
+      border-radius: 0 !important;
+
+      font-size: 2vh;
+      color: #111;
+
+      &:hover {
+        background-color: var(--main-color);
+        border-color: var(--main-color);
+        color: #fff;
+      }
+    }
+  }
 }
