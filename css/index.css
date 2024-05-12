@@ -126,6 +126,10 @@
   margin-bottom: 0.5vh !important;
   font-size: 1.8vh;
 }
+.recommendInfo .content .textBox .effect {
+  color: #cbcaca;
+  font-size: 2vh;
+}
 .recommendInfo .content .textBox .name {
   font-size: 2.7vh;
   font-weight: bold;
