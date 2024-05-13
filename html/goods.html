@@ -28,7 +28,7 @@
 
 <body>
   <!-- 导航栏 -->
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-md">
     <div class="container-fluid">
       <a class="navbar-brand" href="/index.html">
         <img src="/img/logo.png" alt="">
@@ -45,7 +45,7 @@
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
             <a class="nav-link" href="/html/goods.html" role="button">
               药膳商品
@@ -136,24 +136,8 @@
 
 
   <script src="../js/goods.js"></script>
-  <script type="text/javascript" src="/js/magic_mouse.js"></script>
   <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script>
-
   <script>
-    document.querySelectorAll('a, button, .card, .cart, .sideBar li').forEach(el => {
-      el.classList.add('magic-hover')
-    })
-    const options = {
-      "outerStyle": "disable",
-      "hoverEffect": "pointer-overlay",
-      "hoverItemMove": false,
-      "defaultCursor": false,
-      "outerWidth": 30,
-      "outerHeight": 30
-    }
-    magicMouse(options)
-
-    // lenis
     const lenis = new Lenis()
 
     function raf(time) {
